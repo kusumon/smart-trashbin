@@ -14,7 +14,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   obstacle_stts = digitalRead(obstacle);
-  int x = map (obstacle_stts, 0, 1, 100, 0);
+  int x = map (obstacle_stts, 0, 1, 100, 0); //for comparing the obstacle_stts with angle degree of servo
   if (obstacle_stts == 0)
   {
     Serial.println("object detected !");
